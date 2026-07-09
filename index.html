@@ -20,10 +20,21 @@ background:#ffffff;
 padding-bottom: 100px;
 }
 
-/* Background Atas */
+/* ✅ Bagian Header dengan Logo */
 .header-bg{
 background:url("top-bg.jpg") center center/cover no-repeat;
 padding:20px 0 60px;
+position: relative; /* Agar logo bisa diletakkan di dalamnya */
+}
+
+/* ✅ Gaya Logo Pojok Kiri Atas */
+.logo{
+position: absolute;
+top: 15px;
+left: 20px;
+width: 80px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+height: auto;
+z-index: 10; /* Agar logo terlihat di atas latar belakang */
 }
 
 /* Banner */
@@ -35,6 +46,8 @@ margin:auto;
 overflow:hidden;
 border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,.3);
+position: relative;
+z-index: 5;
 }
 
 .banner img{
@@ -67,7 +80,7 @@ text-align:center;
 padding:18px;
 }
 
-/* ✅ Diubah: 10 Juta jadi bentuk tombol sama persis */
+/* Nominal 10 Juta sama gaya tombol */
 .nominal{
 display:block;
 width:88%;
@@ -83,7 +96,7 @@ box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 border: 2px solid #ffffff;
 }
 
-/* ✅ Tombol 20 & 30 Juta tetap sama */
+/* Tombol 20 & 30 Juta */
 .btn{
 display:block;
 width:88%;
@@ -173,6 +186,12 @@ position: relative;
 height:190px;
 }
 
+.logo{
+width: 65px; /* Ukuran logo lebih kecil untuk HP */
+top: 12px;
+left: 15px;
+}
+
 .title{
 font-size:20px;
 }
@@ -206,12 +225,15 @@ padding:18px;
 
 <body>
 
-<!-- Background Atas -->
+<!-- Background Atas + Logo -->
 <div class="header-bg">
 
-<div class="banner">
-<img src="banner.jpg" alt="Banner">
-</div>
+    <!-- ✅ Logo di pojok kiri atas -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <div class="banner">
+        <img src="banner.jpg" alt="Banner">
+    </div>
 
 </div>
 
@@ -222,7 +244,6 @@ padding:18px;
 SILAHKAN PILIH HADIAH ANDA
 </div>
 
-<!-- ✅ Sekarang bentuknya sama persis -->
 <div class="nominal">
 Rp. 10.000.000
 </div>
@@ -270,7 +291,6 @@ Rp. 30.000.000
 <div style="position: relative;">
     <img src="tombolbawah.png" class="bottom" alt="Navigasi Bawah">
 
-    <!-- Tombol MASUK -->
     <div class="login-area">
         <a href="login.html" class="login-btn">
             MASUK
@@ -302,4 +322,4 @@ behavior:"smooth"
 </script>
 
 </body>
-</html>
+    </html>
