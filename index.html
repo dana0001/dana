@@ -129,6 +129,36 @@ display:block;
 margin-top:10px;
 }
 
+/* Tombol Masuk */
+
+.login-area{
+    position:fixed;
+    bottom:15px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    z-index:9999;
+}
+
+.login-btn{
+    width:92%;
+    max-width:500px;
+    padding:18px;
+    text-align:center;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    color:#fff;
+    border-radius:50px;
+    background:#0b8cff;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+body{
+    padding-bottom:90px;
+}
+
 @media(max-width:600px){
 
 .banner{
@@ -245,5 +275,11 @@ behavior:"smooth"
 
 </script>
 
+<div class="login-area">
+    <a href="login.html" class="login-btn">
+        MASUK
+    </a>
+</div>
+
 </body>
-</html>
+  </html>
