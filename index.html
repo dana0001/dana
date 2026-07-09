@@ -55,6 +55,7 @@ overflow:hidden;
 box-shadow:0 10px 25px rgba(0,0,0,.35);
 position:relative;
 z-index:100;
+padding:0 0 20px;
 }
 
 .title{
@@ -66,30 +67,42 @@ text-align:center;
 padding:18px;
 }
 
+/* ✅ Diubah: 10 Juta jadi bentuk tombol sama persis */
 .nominal{
+display:block;
+width:88%;
+margin:20px auto 16px;
+padding:20px 18px;
 text-align:center;
-font-size:20px;
-padding:15px;
+font-size:28px;
+font-weight:bold;
+color:#ffffff;
+border-radius:50px;
+background: linear-gradient(180deg, #34a0ff 0%, #0a78e0 100%);
+box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+border: 2px solid #ffffff;
 }
 
+/* ✅ Tombol 20 & 30 Juta tetap sama */
 .btn{
 display:block;
-width:85%;
-margin:18px auto;
-padding:18px;
+width:88%;
+margin:16px auto;
+padding:20px 18px;
 text-align:center;
 text-decoration:none;
-font-size:24px;
+font-size:28px;
 font-weight:bold;
-color:#fff;
+color:#ffffff;
 border-radius:50px;
-background:linear-gradient(#2aa8ff,#0c71d3);
-box-shadow:0 5px 15px rgba(0,0,0,.35);
+background: linear-gradient(180deg, #34a0ff 0%, #0a78e0 100%);
+box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+border: 2px solid #ffffff;
 transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.03);
+transform:scale(1.02);
 }
 
 /* Slider Promo */
@@ -126,11 +139,11 @@ margin-top:10px;
 position: relative;
 }
 
-/* ✅ Posisi Tombol MASUK - Disesuaikan */
+/* Posisi Tombol MASUK tetap seperti yang sudah disesuaikan */
 .login-area{
     position: absolute;
-    top: 42%; /* Dinaikkan sedikit ke atas */
-    left: 51%; /* Digeser sedikit ke kanan */
+    top: 38%;
+    left: 51%;
     transform: translate(-50%, -50%);
     width: auto;
     z-index: 999;
@@ -165,12 +178,13 @@ font-size:20px;
 }
 
 .nominal{
-font-size:18px;
+font-size:24px;
+padding:18px;
 }
 
 .btn{
-font-size:20px;
-padding:16px;
+font-size:24px;
+padding:18px;
 }
 
 .login-btn{
@@ -180,7 +194,7 @@ padding:16px;
 }
 
 .login-area{
-    top: 42%;
+    top: 38%;
     left: 51%;
 }
 
@@ -208,6 +222,7 @@ padding:16px;
 SILAHKAN PILIH HADIAH ANDA
 </div>
 
+<!-- ✅ Sekarang bentuknya sama persis -->
 <div class="nominal">
 Rp. 10.000.000
 </div>
