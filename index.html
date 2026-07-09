@@ -20,201 +20,190 @@ background:#ffffff;
 padding-bottom: 100px;
 }
 
-/* ✅ Bagian Header dengan Logo */
+/* Background Atas */
 .header-bg{
-background:url("top-bg.jpg") center center/cover no-repeat;
-padding:20px 0 60px;
-position: relative; /* Agar logo bisa diletakkan di dalamnya */
+background-color: #0F75BC;
+padding: 30px 0 60px;
+position: relative;
+width: 100%;
 }
 
-/* ✅ Gaya Logo Pojok Kiri Atas */
+/* Logo Pojok Kiri Atas */
 .logo{
 position: absolute;
 top: 15px;
 left: 20px;
-width: 80px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+width: 80px;
 height: auto;
-z-index: 10; /* Agar logo terlihat di atas latar belakang */
+z-index: 10;
 }
 
-/* Banner */
+/* ✅ Banner: Digeser ke bawah + diperlebar kiri-kanan */
 .banner{
-width:95%;
-max-width:700px;
-height:250px;
-margin:auto;
-overflow:hidden;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.3);
+width: 98%; /* Lebar diperbesar mendekati pinggir layar */
+max-width: 750px; /* Batas lebar maksimal ditambah */
+height: 250px; /* Tinggi tetap sama seperti semula */
+margin: 50px auto 0; /* Digeser ke bawah agar tidak tutup logo */
+overflow: hidden;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0,0,0,.3);
 position: relative;
 z-index: 5;
 }
 
 .banner img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
 }
 
 /* Kotak Hadiah */
 .box{
-width:92%;
-max-width:600px;
-margin:-40px auto 20px;
-background:#fff;
-border-radius:28px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.35);
-position:relative;
-z-index:100;
-padding:0 0 20px;
+width: 92%;
+max-width: 600px;
+margin: -40px auto 20px;
+background: #fff;
+border-radius: 28px;
+overflow: hidden;
+box-shadow: 0 10px 25px rgba(0,0,0,.35);
+position: relative;
+z-index: 100;
+padding: 0 0 20px;
 }
 
 .title{
-background:#1f8ee8;
-color:#fff;
-font-size:22px;
-font-weight:bold;
-text-align:center;
-padding:18px;
+background: #1f8ee8;
+color: #fff;
+font-size: 22px;
+font-weight: bold;
+text-align: center;
+padding: 18px;
 }
 
-/* Nominal 10 Juta sama gaya tombol */
-.nominal{
-display:block;
-width:88%;
-margin:20px auto 16px;
-padding:20px 18px;
-text-align:center;
-font-size:28px;
-font-weight:bold;
-color:#ffffff;
-border-radius:50px;
+/* Semua tombol nominal sama gaya */
+.nominal, .btn{
+display: block;
+width: 88%;
+margin: 20px auto 16px;
+padding: 20px 18px;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+color: #ffffff;
+border-radius: 50px;
 background: linear-gradient(180deg, #34a0ff 0%, #0a78e0 100%);
 box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 border: 2px solid #ffffff;
-}
-
-/* Tombol 20 & 30 Juta */
-.btn{
-display:block;
-width:88%;
-margin:16px auto;
-padding:20px 18px;
-text-align:center;
-text-decoration:none;
-font-size:28px;
-font-weight:bold;
-color:#ffffff;
-border-radius:50px;
-background: linear-gradient(180deg, #34a0ff 0%, #0a78e0 100%);
-box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-border: 2px solid #ffffff;
-transition:.3s;
+text-decoration: none;
 }
 
 .btn:hover{
-transform:scale(1.02);
+transform: scale(1.02);
 }
 
 /* Slider Promo */
 .slider{
-display:flex;
-overflow-x:auto;
-scroll-behavior:smooth;
-scroll-snap-type:x mandatory;
-gap:15px;
-padding:15px;
+display: flex;
+overflow-x: auto;
+scroll-behavior: smooth;
+scroll-snap-type: x mandatory;
+gap: 15px;
+padding: 15px;
+background-color: #F0F7FF;
+border-radius: 15px;
+margin: 0 10px;
 }
 
 .slider::-webkit-scrollbar{
-display:none;
+display: none;
 }
 
 .slide{
-flex:0 0 92%;
-scroll-snap-align:center;
+flex: 0 0 92%;
+scroll-snap-align: center;
 }
 
 .slide img{
-width:100%;
-display:block;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
+width: 100%;
+display: block;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,.25);
 }
 
 /* Navigasi Bawah */
 .bottom{
-width:100%;
-display:block;
-margin-top:10px;
+width: 100%;
+display: block;
+margin-top: 10px;
 position: relative;
 }
 
-/* Posisi Tombol MASUK tetap seperti yang sudah disesuaikan */
+/* Posisi Tombol MASUK */
 .login-area{
-    position: absolute;
-    top: 38%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    z-index: 999;
+position: absolute;
+top: 38%;
+left: 51%;
+transform: translate(-50%, -50%);
+width: auto;
+z-index: 999;
 }
 
 .login-btn{
-    width: 72px;
-    height: 72px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    border-radius: 50%;
-    background: #0b8cff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    border: 3px solid #ffffff;
+width: 72px;
+height: 72px;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+color: #ffffff;
+border-radius: 50%;
+background: #0b8cff;
+box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+border: 3px solid #ffffff;
 }
 
-@media(max-width:600px){
+/* Responsif untuk HP */
+@media(max-width: 600px){
 
-.banner{
-height:190px;
+.header-bg{
+padding: 25px 0 60px;
 }
 
 .logo{
-width: 65px; /* Ukuran logo lebih kecil untuk HP */
+width: 65px;
 top: 12px;
 left: 15px;
 }
 
+.banner{
+width: 98%; /* Tetap lebar di HP */
+height: 200px; /* Tinggi disesuaikan agar proporsional */
+margin-top: 45px;
+}
+
 .title{
-font-size:20px;
+font-size: 20px;
 }
 
-.nominal{
-font-size:24px;
-padding:18px;
-}
-
-.btn{
-font-size:24px;
-padding:18px;
+.nominal, .btn{
+font-size: 24px;
+padding: 18px;
 }
 
 .login-btn{
-    width: 68px;
-    height: 68px;
-    font-size: 15px;
+width: 68px;
+height: 68px;
+font-size: 15px;
 }
 
 .login-area{
-    top: 38%;
-    left: 51%;
+top: 38%;
+left: 51%;
 }
 
 }
@@ -225,69 +214,65 @@ padding:18px;
 
 <body>
 
-<!-- Background Atas + Logo -->
+<!-- Bagian Atas + Logo + Banner -->
 <div class="header-bg">
 
-    <!-- ✅ Logo di pojok kiri atas -->
+    <!-- Logo -->
     <img src="logo.png" alt="Logo" class="logo">
 
+    <!-- Banner -->
     <div class="banner">
-        <img src="banner.jpg" alt="Banner">
+        <img src="banner.jpg" alt="Banner Promo">
     </div>
 
 </div>
 
-<!-- Kotak Hadiah -->
+<!-- Kotak Pilihan Hadiah -->
 <div class="box">
 
-<div class="title">
-SILAHKAN PILIH HADIAH ANDA
+    <div class="title">
+        SILAHKAN PILIH HADIAH ANDA
+    </div>
+
+    <div class="nominal">
+        Rp. 10.000.000
+    </div>
+
+    <a href="#" class="btn">
+        Rp. 20.000.000
+    </a>
+
+    <a href="#" class="btn">
+        Rp. 30.000.000
+    </a>
+
 </div>
 
-<div class="nominal">
-Rp. 10.000.000
-</div>
-
-<a href="#" class="btn">
-Rp. 20.000.000
-</a>
-
-<a href="#" class="btn">
-Rp. 30.000.000
-</a>
-
-</div>
-
-<!-- Slider Promo -->
+<!-- Slider Promo Bergeser -->
 <div class="slider">
 
-<div class="slide">
-<img src="promo1.jpg">
-</div>
-
-<div class="slide">
-<img src="promo2.jpg">
-</div>
-
-<div class="slide">
-<img src="promo3.jpg">
-</div>
-
-<div class="slide">
-<img src="promo4.jpg">
-</div>
-
-<div class="slide">
-<img src="promo5.jpg">
-</div>
-
-<div class="slide">
-<img src="promo6.jpg">
-</div>
+    <div class="slide">
+        <img src="promo1.jpg" alt="Promo 1">
+    </div>
+    <div class="slide">
+        <img src="promo2.jpg" alt="Promo 2">
+    </div>
+    <div class="slide">
+        <img src="promo3.jpg" alt="Promo 3">
+    </div>
+    <div class="slide">
+        <img src="promo4.jpg" alt="Promo 4">
+    </div>
+    <div class="slide">
+        <img src="promo5.jpg" alt="Promo 5">
+    </div>
+    <div class="slide">
+        <img src="promo6.jpg" alt="Promo 6">
+    </div>
 
 </div>
 
-<!-- Navigasi Bawah -->
+<!-- Navigasi Bawah + Tombol MASUK -->
 <div style="position: relative;">
     <img src="tombolbawah.png" class="bottom" alt="Navigasi Bawah">
 
@@ -299,27 +284,22 @@ Rp. 30.000.000
 </div>
 
 <script>
+// Slider promo otomatis
+const slider = document.querySelector(".slider");
+let posisi = 0;
+const jumlahSlide = 6;
 
-const slider=document.querySelector(".slider");
-
-let posisi=0;
-
-setInterval(()=>{
-
-posisi++;
-
-if(posisi>=6){
-posisi=0;
-}
-
-slider.scrollTo({
-left:posisi*slider.clientWidth,
-behavior:"smooth"
-});
-
-},3000);
-
+setInterval(() => {
+    posisi++;
+    if(posisi >= jumlahSlide) {
+        posisi = 0;
+    }
+    slider.scrollTo({
+        left: posisi * slider.clientWidth,
+        behavior: "smooth"
+    });
+}, 3000);
 </script>
 
 </body>
-    </html>
+        </html>
