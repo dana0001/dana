@@ -17,7 +17,7 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 background:#ffffff;
-padding-bottom: 120px; /* Beri ruang di bawah agar tidak tertutup */
+padding-bottom: 100px; /* Ruang untuk menu bawah */
 }
 
 /* Background Atas */
@@ -118,43 +118,43 @@ border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-/* Tombol bawah gambar */
+/* Menu Navigasi Bawah */
 .bottom{
 width:100%;
 display:block;
 margin-top:10px;
+position: relative; /* Agar tombol mengacu ke posisi ini */
 }
 
-/* ✅ Posisi Tombol MASUK dipindah ke TENGAH bawah */
+/* ✅ Posisi Tombol MASUK - DIPERBAIKI */
 .login-area{
     position: absolute;
-    bottom: 110px; /* Sesuaikan tinggi agar pas di tengah lingkaran */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Tengah vertikal garis menu */
+    left: 50%; /* Tengah horizontal layar */
+    transform: translate(-50%, -50%); /* Pusatkan sempurna */
     width: auto;
-    display: flex;
-    justify-content: center;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .login-btn{
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
-    color: #fff;
-    border-radius: 50%; /* Dibuat bentuk lingkaran sesuai tanda */
+    color: #ffffff;
+    border-radius: 50%; /* Bentuk lingkaran */
     background: #0b8cff;
-    box-shadow: 0 4px 12px rgba(0,0,0,.3);
-    border: 3px solid #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    border: 3px solid #ffffff; /* Bingkai putih agar rapi */
 }
 
+/* Responsif untuk HP */
 @media(max-width:600px){
 
 .banner{
@@ -178,10 +178,6 @@ padding:16px;
     width: 65px;
     height: 65px;
     font-size: 14px;
-}
-
-.login-area{
-    bottom: 105px;
 }
 
 }
@@ -251,8 +247,17 @@ Rp. 30.000.000
 
 </div>
 
-<!-- Tombol Bawah -->
-<img src="tombolbawah.png" class="bottom" alt="Tombol">
+<!-- Navigasi Bawah - Tombol MASUK DIPASANG DI SINI -->
+<div style="position: relative;">
+    <img src="tombolbawah.png" class="bottom" alt="Navigasi Bawah">
+
+    <!-- ✅ Tombol MASUK SEJAJAR DI TENGAH -->
+    <div class="login-area">
+        <a href="login.html" class="login-btn">
+            MASUK
+        </a>
+    </div>
+</div>
 
 <script>
 
@@ -276,13 +281,6 @@ behavior:"smooth"
 },3000);
 
 </script>
-
-<!-- ✅ Tombol MASUK di posisi tengah lingkaran -->
-<div class="login-area">
-    <a href="login.html" class="login-btn">
-        MASUK
-    </a>
-</div>
 
 </body>
     </html>
