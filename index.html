@@ -17,7 +17,7 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 background:#ffffff;
-padding-bottom: 100px; /* Ruang untuk menu bawah */
+padding-bottom: 100px;
 }
 
 /* Background Atas */
@@ -118,43 +118,42 @@ border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-/* Menu Navigasi Bawah */
+/* Navigasi Bawah */
 .bottom{
 width:100%;
 display:block;
 margin-top:10px;
-position: relative; /* Agar tombol mengacu ke posisi ini */
+position: relative;
 }
 
-/* ✅ Posisi Tombol MASUK - DIPERBAIKI */
+/* ✅ Posisi Tombol MASUK - Disesuaikan */
 .login-area{
     position: absolute;
-    top: 50%; /* Tengah vertikal garis menu */
-    left: 50%; /* Tengah horizontal layar */
-    transform: translate(-50%, -50%); /* Pusatkan sempurna */
+    top: 42%; /* Dinaikkan sedikit ke atas */
+    left: 51%; /* Digeser sedikit ke kanan */
+    transform: translate(-50%, -50%);
     width: auto;
     z-index: 999;
 }
 
 .login-btn{
-    width: 68px;
-    height: 68px;
+    width: 72px;
+    height: 72px;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    border-radius: 50%; /* Bentuk lingkaran */
+    border-radius: 50%;
     background: #0b8cff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-    border: 3px solid #ffffff; /* Bingkai putih agar rapi */
+    border: 3px solid #ffffff;
 }
 
-/* Responsif untuk HP */
 @media(max-width:600px){
 
 .banner{
@@ -175,9 +174,14 @@ padding:16px;
 }
 
 .login-btn{
-    width: 65px;
-    height: 65px;
-    font-size: 14px;
+    width: 68px;
+    height: 68px;
+    font-size: 15px;
+}
+
+.login-area{
+    top: 42%;
+    left: 51%;
 }
 
 }
@@ -247,11 +251,11 @@ Rp. 30.000.000
 
 </div>
 
-<!-- Navigasi Bawah - Tombol MASUK DIPASANG DI SINI -->
+<!-- Navigasi Bawah -->
 <div style="position: relative;">
     <img src="tombolbawah.png" class="bottom" alt="Navigasi Bawah">
 
-    <!-- ✅ Tombol MASUK SEJAJAR DI TENGAH -->
+    <!-- Tombol MASUK -->
     <div class="login-area">
         <a href="login.html" class="login-btn">
             MASUK
@@ -283,4 +287,4 @@ behavior:"smooth"
 </script>
 
 </body>
-    </html>
+</html>
