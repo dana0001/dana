@@ -20,33 +20,33 @@ background:#ffffff;
 padding-bottom: 100px;
 }
 
-/* Background Atas */
+/* ✅ Background Atas Warna Biru Sesuai Gambar */
 .header-bg{
-background-color: #0F75BC;
-padding: 30px 0 60px;
+background-color: #0070E8; /* Warna biru seragam seperti contoh */
+padding: 20px 0 50px;
 position: relative;
 width: 100%;
 }
 
-/* Logo Pojok Kiri Atas */
+/* ✅ Logo Pojok Kiri Atas */
 .logo{
 position: absolute;
-top: 15px;
-left: 20px;
-width: 80px;
+top: 18px;
+left: 22px;
+width: 90px;
 height: auto;
 z-index: 10;
 }
 
-/* ✅ Banner: Digeser ke bawah + diperlebar kiri-kanan */
+/* ✅ Banner: Lebar penuh, posisi pas, tinggi tetap */
 .banner{
-width: 98%; /* Lebar diperbesar mendekati pinggir layar */
-max-width: 750px; /* Batas lebar maksimal ditambah */
-height: 250px; /* Tinggi tetap sama seperti semula */
-margin: 50px auto 0; /* Digeser ke bawah agar tidak tutup logo */
+width: 96%;
+max-width: 720px;
+height: 260px;
+margin: 60px auto 0; /* Digeser ke bawah agar tidak tutup logo */
 overflow: hidden;
-border-radius: 15px;
-box-shadow: 0 8px 20px rgba(0,0,0,.3);
+border-radius: 18px;
+box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 position: relative;
 z-index: 5;
 }
@@ -58,51 +58,54 @@ object-fit: cover;
 display: block;
 }
 
-/* Kotak Hadiah */
+/* ✅ Kotak Pilihan Hadiah */
 .box{
-width: 92%;
-max-width: 600px;
-margin: -40px auto 20px;
-background: #fff;
-border-radius: 28px;
+width: 96%;
+max-width: 720px;
+margin: -35px auto 20px;
+background: #ffffff;
+border-radius: 24px;
 overflow: hidden;
-box-shadow: 0 10px 25px rgba(0,0,0,.35);
+box-shadow: 0 8px 22px rgba(0,0,0,0.25);
 position: relative;
 z-index: 100;
-padding: 0 0 20px;
+padding: 0 0 25px;
 }
 
+/* Judul Kotak */
 .title{
-background: #1f8ee8;
-color: #fff;
-font-size: 22px;
+background: #0070E8;
+color: #ffffff;
+font-size: 24px;
 font-weight: bold;
 text-align: center;
-padding: 18px;
+padding: 20px;
+letter-spacing: 0.5px;
 }
 
-/* Semua tombol nominal sama gaya */
+/* ✅ Semua Tombol Nominal Sama Bentuk & Warna */
 .nominal, .btn{
 display: block;
-width: 88%;
-margin: 20px auto 16px;
-padding: 20px 18px;
+width: 90%;
+margin: 22px auto 0;
+padding: 22px 18px;
 text-align: center;
 font-size: 28px;
 font-weight: bold;
 color: #ffffff;
 border-radius: 50px;
-background: linear-gradient(180deg, #34a0ff 0%, #0a78e0 100%);
-box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+background: linear-gradient(180deg, #1A90FF 0%, #0070E8 100%);
+box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 border: 2px solid #ffffff;
 text-decoration: none;
 }
 
 .btn:hover{
 transform: scale(1.02);
+transition: 0.2s ease;
 }
 
-/* Slider Promo */
+/* ✅ Slider Promo Bergeser */
 .slider{
 display: flex;
 overflow-x: auto;
@@ -110,7 +113,7 @@ scroll-behavior: smooth;
 scroll-snap-type: x mandatory;
 gap: 15px;
 padding: 15px;
-background-color: #F0F7FF;
+background-color: #F5F9FF;
 border-radius: 15px;
 margin: 0 10px;
 }
@@ -128,10 +131,10 @@ scroll-snap-align: center;
 width: 100%;
 display: block;
 border-radius: 15px;
-box-shadow: 0 5px 15px rgba(0,0,0,.25);
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Navigasi Bawah */
+/* ✅ Navigasi Bawah */
 .bottom{
 width: 100%;
 display: block;
@@ -139,11 +142,11 @@ margin-top: 10px;
 position: relative;
 }
 
-/* Posisi Tombol MASUK */
+/* ✅ Posisi Tombol MASUK */
 .login-area{
 position: absolute;
-top: 38%;
-left: 51%;
+top: 40%;
+left: 50%;
 transform: translate(-50%, -50%);
 width: auto;
 z-index: 999;
@@ -162,37 +165,38 @@ font-size: 16px;
 font-weight: bold;
 color: #ffffff;
 border-radius: 50%;
-background: #0b8cff;
-box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+background: #0070E8;
+box-shadow: 0 3px 10px rgba(0,0,0,0.25);
 border: 3px solid #ffffff;
 }
 
-/* Responsif untuk HP */
+/* ✅ Tampilan Responsif di HP */
 @media(max-width: 600px){
 
 .header-bg{
-padding: 25px 0 60px;
+padding: 18px 0 45px;
 }
 
 .logo{
-width: 65px;
-top: 12px;
-left: 15px;
+width: 75px;
+top: 15px;
+left: 18px;
 }
 
 .banner{
-width: 98%; /* Tetap lebar di HP */
-height: 200px; /* Tinggi disesuaikan agar proporsional */
-margin-top: 45px;
+width: 96%;
+height: 220px;
+margin-top: 55px;
 }
 
 .title{
-font-size: 20px;
+font-size: 22px;
+padding: 18px;
 }
 
 .nominal, .btn{
-font-size: 24px;
-padding: 18px;
+font-size: 25px;
+padding: 20px;
 }
 
 .login-btn{
@@ -202,8 +206,8 @@ font-size: 15px;
 }
 
 .login-area{
-top: 38%;
-left: 51%;
+top: 40%;
+left: 50%;
 }
 
 }
@@ -214,7 +218,7 @@ left: 51%;
 
 <body>
 
-<!-- Bagian Atas + Logo + Banner -->
+<!-- Bagian Atas: Background Biru + Logo + Banner -->
 <div class="header-bg">
 
     <!-- Logo -->
@@ -222,7 +226,7 @@ left: 51%;
 
     <!-- Banner -->
     <div class="banner">
-        <img src="banner.jpg" alt="Banner Promo">
+        <img src="banner.jpg" alt="Banner Promo Hadiah">
     </div>
 
 </div>
@@ -248,7 +252,7 @@ left: 51%;
 
 </div>
 
-<!-- Slider Promo Bergeser -->
+<!-- Slider Promo Bergeser Otomatis -->
 <div class="slider">
 
     <div class="slide">
@@ -274,7 +278,7 @@ left: 51%;
 
 <!-- Navigasi Bawah + Tombol MASUK -->
 <div style="position: relative;">
-    <img src="tombolbawah.png" class="bottom" alt="Navigasi Bawah">
+    <img src="tombolbawah.png" class="bottom" alt="Menu Navigasi Bawah">
 
     <div class="login-area">
         <a href="login.html" class="login-btn">
@@ -284,7 +288,7 @@ left: 51%;
 </div>
 
 <script>
-// Slider promo otomatis
+// Fungsi Slider Promo Bergeser Otomatis
 const slider = document.querySelector(".slider");
 let posisi = 0;
 const jumlahSlide = 6;
@@ -302,4 +306,4 @@ setInterval(() => {
 </script>
 
 </body>
-        </html>
+</html>
