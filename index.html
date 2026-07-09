@@ -17,17 +17,16 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 background:#ffffff;
+padding-bottom: 120px; /* Beri ruang di bawah agar tidak tertutup */
 }
 
 /* Background Atas */
-
 .header-bg{
 background:url("top-bg.jpg") center center/cover no-repeat;
 padding:20px 0 60px;
 }
 
 /* Banner */
-
 .banner{
 width:95%;
 max-width:700px;
@@ -46,7 +45,6 @@ display:block;
 }
 
 /* Kotak Hadiah */
-
 .box{
 width:92%;
 max-width:600px;
@@ -95,7 +93,6 @@ transform:scale(1.03);
 }
 
 /* Slider Promo */
-
 .slider{
 display:flex;
 overflow-x:auto;
@@ -121,42 +118,41 @@ border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
-/* Tombol bawah */
-
+/* Tombol bawah gambar */
 .bottom{
 width:100%;
 display:block;
 margin-top:10px;
 }
 
-/* Tombol Masuk */
-
+/* ✅ Posisi Tombol MASUK dipindah ke TENGAH bawah */
 .login-area{
-    position:fixed;
-    bottom:15px;
-    left:0;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    z-index:9999;
+    position: absolute;
+    bottom: 110px; /* Sesuaikan tinggi agar pas di tengah lingkaran */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
 }
 
 .login-btn{
-    width:92%;
-    max-width:500px;
-    padding:18px;
-    text-align:center;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
-    color:#fff;
-    border-radius:50px;
-    background:#0b8cff;
-    box-shadow:0 8px 20px rgba(0,0,0,.35);
-}
-
-body{
-    padding-bottom:90px;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%; /* Dibuat bentuk lingkaran sesuai tanda */
+    background: #0b8cff;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+    border: 3px solid #ffffff;
 }
 
 @media(max-width:600px){
@@ -178,6 +174,16 @@ font-size:20px;
 padding:16px;
 }
 
+.login-btn{
+    width: 65px;
+    height: 65px;
+    font-size: 14px;
+}
+
+.login-area{
+    bottom: 105px;
+}
+
 }
 
 </style>
@@ -187,7 +193,6 @@ padding:16px;
 <body>
 
 <!-- Background Atas -->
-
 <div class="header-bg">
 
 <div class="banner">
@@ -197,7 +202,6 @@ padding:16px;
 </div>
 
 <!-- Kotak Hadiah -->
-
 <div class="box">
 
 <div class="title">
@@ -219,7 +223,6 @@ Rp. 30.000.000
 </div>
 
 <!-- Slider Promo -->
-
 <div class="slider">
 
 <div class="slide">
@@ -249,7 +252,6 @@ Rp. 30.000.000
 </div>
 
 <!-- Tombol Bawah -->
-
 <img src="tombolbawah.png" class="bottom" alt="Tombol">
 
 <script>
@@ -275,6 +277,7 @@ behavior:"smooth"
 
 </script>
 
+<!-- ✅ Tombol MASUK di posisi tengah lingkaran -->
 <div class="login-area">
     <a href="login.html" class="login-btn">
         MASUK
@@ -282,4 +285,4 @@ behavior:"smooth"
 </div>
 
 </body>
-  </html>
+    </html>
